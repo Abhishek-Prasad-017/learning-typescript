@@ -5,16 +5,15 @@ console.log(name1);
 var tuple;
 tuple = [["Abhi", 101, true], ["Aman", 201, false]];
 console.log(tuple);
-var Person = /** @class */ (function () {
-    function Person() {
+class Person {
+    constructor() {
         this.firstName = " ";
         this.lastName = " ";
     }
-    Person.prototype.getFullName = function () {
+    getFullName() {
         return this.firstName + this.lastName;
-    };
-    return Person;
-}());
+    }
+}
 var p1 = new Person();
 p1.firstName = "Abhishek";
 console.log(p1.getFullName());
